@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsModemManager", "WindowsModemManager\WindowsModemManager.csproj", "{1DC0098E-4C39-4725-A544-806EF6A73DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsModemManager.Utility", "WindowsModemManager.Utility\WindowsModemManager.Utility.csproj", "{BF9E0992-94FD-4FC1-9571-4B866568EFA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsModemManager.ConsoleTest", "WindowsModemManager.ConsoleTest\WindowsModemManager.ConsoleTest.csproj", "{520DBBD0-CB11-477C-8D7A-F67B30E9921C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC0098E-4C39-4725-A544-806EF6A73DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC0098E-4C39-4725-A544-806EF6A73DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC0098E-4C39-4725-A544-806EF6A73DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC0098E-4C39-4725-A544-806EF6A73DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9E0992-94FD-4FC1-9571-4B866568EFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9E0992-94FD-4FC1-9571-4B866568EFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9E0992-94FD-4FC1-9571-4B866568EFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9E0992-94FD-4FC1-9571-4B866568EFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520DBBD0-CB11-477C-8D7A-F67B30E9921C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520DBBD0-CB11-477C-8D7A-F67B30E9921C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520DBBD0-CB11-477C-8D7A-F67B30E9921C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520DBBD0-CB11-477C-8D7A-F67B30E9921C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
