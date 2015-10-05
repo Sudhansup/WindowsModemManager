@@ -155,5 +155,10 @@ namespace WindowsModemManager.Utility
             return data;
         }
 
+        public static bool IsNetworkAvailable()
+        {
+            return System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable();
+        }
+
     }
 }

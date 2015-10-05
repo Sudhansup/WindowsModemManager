@@ -76,6 +76,17 @@ namespace WindowsModemManager.Utility
             }
         }
 
+        public static int NetFailureRetryIntervalMinute
+        {
+            get
+            {
+                var WaitTime = System.Configuration.ConfigurationManager.AppSettings["NetFailureRetryIntervalMinute"];
+                int NetFailureRetryInterval;
+                Int32.TryParse(WaitTime, out NetFailureRetryInterval);
+                return NetFailureRetryInterval != 0 ? NetFailureRetryInterval : 5;
+            }
+        }
+
         public static int FailureCountForShutDown
         {
             get

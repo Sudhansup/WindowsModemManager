@@ -1,6 +1,6 @@
 ﻿namespace WindowsModemManager
 {
-    partial class ModemManagerService
+    partial class ModemManager
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
         }
+                    
 
         #endregion
     }

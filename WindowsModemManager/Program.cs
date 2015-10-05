@@ -17,7 +17,7 @@ namespace WindowsModemManager
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new ModemManagerService() 
+                new ModemManager() 
             };
             ServiceBase.Run(ServicesToRun);
         }

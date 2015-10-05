@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WindowsModemManager.Utility;
 using System.IO;
+using System.Diagnostics;
 
 
 namespace WindowsModemManager.Utility
@@ -13,6 +14,33 @@ namespace WindowsModemManager.Utility
     {
         private const string ErrorLogFileName = "Error";
         private const string TraceLogFileName = "Log";
+        private const string EventLogSource = "MyModemManager";
+        private const string EventLog = "MyModemManagerLog";
+        private static EventLog _EventLoger;
+
+        public static EventLog EventLoger
+        {
+            get { 
+              if(_EventLoger != null)
+              {
+                  return _EventLoger;
+              }
+              else
+              {
+                  if (!System.Diagnostics.EventLog.SourceExists(EventLogSource))
+                  {
+                     //System.Diagnostics.EventLog.DeleteEventSource(EventLogSource);
+                     System.Diagnostics.EventLog.CreateEventSource(EventLogSource,
+                                                                            EventLog);
+                  }
+
+                  _EventLoger = new EventLog();
+                  _EventLoger.Source = EventLogSource;
+                  return _EventLoger;
+              }
+            }
+        }
+
 
         public static void WriteError(Exception Ex)
         {
